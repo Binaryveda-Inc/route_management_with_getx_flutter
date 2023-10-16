@@ -8,7 +8,7 @@ class SecondScreen extends StatelessWidget {
   final spiceLevel = Get.parameters['spiceLevel'];
   final dishName = Get.parameters['dishName'];
 
-  final arguments = Get.arguments as UserModel?;
+  final userModel = Get.arguments as UserModel?;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class SecondScreen extends StatelessWidget {
             ),
             const SizedBox(height: 16),
             Text(
-              "arguments: $arguments",
+              "arguments: $userModel",
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 16),
